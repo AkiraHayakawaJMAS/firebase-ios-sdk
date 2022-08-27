@@ -84,7 +84,7 @@ NSString *FIRMessagingAppIdentifier(void) {
   // 2022.09 
   // Xcode14 watch app is simple project. It's not include watchkit extension target.
   // So, bundle identifier can use pure value.
-  return bundleID;:
+  return bundleID;
 #else
   return bundleID;
 #endif
