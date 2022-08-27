@@ -79,7 +79,12 @@ NSString *FIRMessagingAppIdentifier(void) {
   // The code is running in watchKit extension target but the actually bundleID is in the watchKit
   // target. So we need to remove the last part of the bundle ID in watchKit extension to match
   // the one in watchKit target.
-  return FIRMessagingBundleIDByRemovingLastPartFrom(bundleID);
+  // return FIRMessagingBundleIDByRemovingLastPartFrom(bundleID);
+
+  // 2022.09 
+  // Xcode14 watch app is simple project. It's not include watchkit extension target.
+  // So, bundle identifier can use pure value.
+  return bundleID;:
 #else
   return bundleID;
 #endif

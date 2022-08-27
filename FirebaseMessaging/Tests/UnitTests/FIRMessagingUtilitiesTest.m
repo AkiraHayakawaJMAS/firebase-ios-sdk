@@ -69,7 +69,9 @@
 
 - (void)testAppIdentifierReturnsExpectedValue {
 #if TARGET_OS_WATCH
-  NSString *bundleIdentifier = @"com.me.myapp.watchkit.watchkitextensions";
+  // NSString *bundleIdentifier = @"com.me.myapp.watchkit.watchkitextensions";
+  // Xcode14 simple watch kit app project.
+  NSString *bundleIdentifier = @"com.me.myapp.watchkit";
   NSString *expectedIdentifier = @"com.me.myapp.watchkit";
 #else
   NSString *bundleIdentifier = @"com.me.myapp";
